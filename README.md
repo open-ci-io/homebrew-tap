@@ -3,6 +3,6 @@
 ## Install
 
 ```bash
-brew tap openci-inc/tap
+brew tap open-ci-io/tap
 brew install openci-worker
 ```
