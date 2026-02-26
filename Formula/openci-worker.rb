@@ -7,7 +7,7 @@ class OpenciWorker < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/open-ci-io/openci/releases/download/openci-worker-v0.4.10/openci-worker-0.4.10-aarch64-apple-darwin.tar.gz"
-      sha256 "9f00d96d773c58b08495c42ae8ad71739946886d8086e8c4310b629977a5283c"
+      sha256 "085d75ea331d27ed96d00a240a22497970a41c96dd821575db12e90f1efcbec4"
     end
   end
 
