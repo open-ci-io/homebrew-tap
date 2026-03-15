@@ -1,13 +1,13 @@
 class OpenciWorker < Formula
   desc "OpenCI Worker CLI"
   homepage "https://github.com/open-ci-io/openci"
-  version "0.7.7"
+  version "0.7.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/open-ci-io/openci/releases/download/openci-worker-cli-v0.7.7/openci-worker-0.7.7-aarch64-apple-darwin.tar.gz"
-      sha256 "0cdbd6fb8864bead08d0f74ff457f042c6df2606dc4ddff64d17f6bc1d2285a2"
+      url "https://github.com/open-ci-io/openci/releases/download/openci-worker-cli-v0.7.8/openci-worker-0.7.8-aarch64-apple-darwin.tar.gz"
+      sha256 "566fda36c9be4aed9ee8a70c2fb31625f3d0c6feaaeecf39f7932c9f1f012499"
     end
   end
 
