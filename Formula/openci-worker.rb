@@ -1,12 +1,12 @@
 class OpenciWorker < Formula
   desc "OpenCI Worker CLI"
   homepage "https://github.com/open-ci-io/openci"
-  version "0.7.20"
+  version "0.7.21"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/open-ci-io/openci/releases/download/v0.7.20/openci-worker-v0.7.20-darwin-arm64.tar.gz"
-      sha256 "7a1a786a2fc9c01871395e48520156b8a24d5065fe654134fd80150bd025bfac"
+      url "https://github.com/open-ci-io/openci/releases/download/v0.7.21/openci-worker-v0.7.21-darwin-arm64.tar.gz"
+      sha256 "e97b155914a020a828af10785078d39d5d7607cf60348ff6068d3c8851301cbf"
     end
   end
 
