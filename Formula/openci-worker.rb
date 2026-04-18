@@ -1,9 +1,9 @@
 class OpenciWorker < Formula
   desc "OpenCI Worker CLI"
   homepage "https://github.com/open-ci-io/openci"
-  version "0.9.4"
-  url "https://github.com/open-ci-io/openci/releases/download/v0.9.4/openci-worker-v0.9.4-darwin-arm64.tar.gz"
-  sha256 "9a254e1fc8f8b61163fa4570c6b978838b7f6668683711e5d434ebec40a4a800"
+  version "0.9.5"
+  url "https://github.com/open-ci-io/openci/releases/download/v0.9.5/openci-worker-v0.9.5-darwin-arm64.tar.gz"
+  sha256 "a5be264cefa1c6aa9ec87c106e8dcf8be92e27a99168ced0fef0be581fe0f215"
 
   depends_on arch: :arm64
 
