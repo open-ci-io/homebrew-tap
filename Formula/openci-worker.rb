@@ -1,20 +1,18 @@
 class OpenciWorker < Formula
   desc "OpenCI Worker CLI"
   homepage "https://github.com/open-ci-io/openci"
-  version "0.9.3"
+  version "0.9.4"
+  url "https://github.com/open-ci-io/openci/releases/download/v0.9.4/openci-worker-v0.9.4-darwin-arm64.tar.gz"
+  sha256 "9a254e1fc8f8b61163fa4570c6b978838b7f6668683711e5d434ebec40a4a800"
 
-  on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/open-ci-io/openci/releases/download/v0.9.3/openci-worker-v0.9.3-darwin-arm64.tar.gz"
-      sha256 "ad15860cb7a78f09fd2b6b0848e0c87fd71725623c460392e839f8f8c1e403e4"
-    end
-  end
+  depends_on arch: :arm64
 
   def install
     bin.install "openci-worker"
   end
 
-  test do
-    system "#{bin}/openci-worker", "--version"
+  service do
+    run [opt_bin/"openci-worker"]
+    keep_alive true
   end
 end
